@@ -15,7 +15,7 @@ createApp({
     },
     methods: {
         nuovaCosa(){
-            if(this.cosaNuova = "") {
+            if(this.cosaNuova != "") {
                 this.array.push(this.cosaNuova)
             }
             this.cosaNuova = ""
