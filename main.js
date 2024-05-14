@@ -1,7 +1,3 @@
-
-
-
-
 const { createApp } = Vue
 
 createApp({
