@@ -16,7 +16,10 @@
         <ul>
             <li v-for="elemento, i in array">{{elemento}}</li>
         </ul>
-        
+
+        <input type="text"  placeholder= "Inserisci altro" v-model="nuovaCosa">
+
+        <button @click="nuovaCosa">Aggiungi</button>
 
 
     </div>
