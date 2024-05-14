@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -13,11 +15,14 @@
 
         <h1>Lista delle cose da fare per</h1>
 
-        <ul>
-            <li v-for="elemento, i in array" @click="selezionaCosa(i)">{{elemento}}</li>
-        </ul>
+        <div class="lista">
+            <ul>
+                <li v-for="elemento, i in array" @click="selezionaCosa(i)"
+                    :class="{ 'click' : i === elementoSelezionato}">{{elemento}}</li>
+            </ul>
+        </div>
 
-        <input type="text"  placeholder= "Inserisci altro" v-model="cosaNuova">
+        <input type="text" placeholder="Inserisci altro" v-model="cosaNuova">
 
         <button @click="nuovaCosa">Aggiungi</button>
         <button @click="rimuoviCosa(i)">Elimina</button>
@@ -26,4 +31,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

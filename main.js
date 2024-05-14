@@ -7,6 +7,7 @@ createApp({
             ],
             cosaNuova:"",
             elementoSelezionato: null,
+            hoverClass: "click"
         }
     },
     methods: {
